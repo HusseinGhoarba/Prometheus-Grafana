@@ -78,15 +78,16 @@ ssh -i `<add-path/key.pem>` ubuntu@`<Public-IP-of-EC2>`
         
         - `prometheus` alert section
         
-        <img src="Gallery/19-prometheus-shot-after-enable-app.png" width=600>
+    <img src="Gallery/19-prometheus-shot-after-enable-app.png" width=600>
         
         - `alertmanager`:
         
-        <img src="Gallery/20-alertmanager-shot-after-enable-nodeApp.png" width=600>
+    <img src="Gallery/20-alertmanager-shot-after-enable-nodeApp.png" width=600>
         
         - `slack` notification:
         
-        <img src="Gallery/21-slack-shot-after-enable-nodeApp.png" width=600>
+    <img src="Gallery/21-slack-shot-after-enable-nodeApp.png" width=600>
+    <img src="Gallery/27-mobile-notification-of-slack.jpeg" width=600>
 
     - `Grafana` as a service and it listens on port `3000`:
     
