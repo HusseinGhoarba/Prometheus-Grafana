@@ -34,39 +34,66 @@ ssh -i `<add-path/key.pem>` ubuntu@`<Public-IP-of-EC2>`
     - `Prometheus` as a service which listen on localhost of the machine on port `9090`
     <img src="Gallery/08-prometheus-service.png" width=600>
     <img src="Gallery/04-promethues-server.png" width=600>
+
     - Final Configuration-file-of-prometheus `/etc/prometheus/prometheus.yml`:
+    
     <img src="Gallery/05-prometheus.yml.png" width=600>
     <img src="Gallery/06-prometheus.yml.png" width=600>
+    
     - `CAdvisor` container for monitoring the containers:
+    
     <img src="Gallery/07-cadvisor-container.png" width=600>
+    
     - `node-exporter` as a service:
+    
     <img src="Gallery/09-node-exporter-service.png" width=600>
+    
     - Avery simple `nodejs-App` within a file `index.js`:
+    
     <img src="Gallery/10-index.js-nodeApp.png" width=600>
+    
     - `slack` application for `nodeApp-Down-Alert` on a channel:
+    
     <img src="Gallery/11-1-slac-app.png" width=600>
     <img src="Gallery/11-2-slack-application.png" width=600>
+    
     - `rule` quieries:
+    
     <img src="Gallery/12-rules.yml-file.png" width=600>
     <img src="Gallery/13-rules-in-server.png" width=600>
     <img src="Gallery/14-alerts-on-server.png" width=600>
+    
     - Configuration file of the `alertmanager` `/etc/alertmanager/alertmanager.yml`
+    
     <img src="Gallery/15-configuration-of-alert.png" width=600>
+    
     - `alertmanager` as a service and it listens on port `9093`:
+    
     <img src="Gallery/16-alertmanager-service.png" width=600>
     <img src="Gallery/17-alertmanager-server.png" width=600>
+    
     - Enable / run the `nodeApp`: 
+    
     <img src="Gallery/18-enable-nodeApp.png" width=600>
+        
         - `prometheus` alert section
+        
         <img src="Gallery/19-prometheus-shot-after-enable-app.png" width=600>
+        
         - `alertmanager`:
+        
         <img src="Gallery/20-alertmanager-shot-after-enable-nodeApp.png" width=600>
+        
         - `slack` notification:
+        
         <img src="Gallery/21-slack-shot-after-enable-nodeApp.png" width=600>
 
     - `Grafana` as a service and it listens on port `3000`:
+    
     <img src="Gallery/22-grafana-check-service.png" width=600>
+    
     - After adding `Data Source` of the grafana as `Prometheus` and configure dashboards
+    
     <img src="Gallery/23-grafana-shot.png" width=600>
     <img src="Gallery/24-grafana-shot-for-container-metrics.png" width=600>
     <img src="Gallery/25-grafana-shot-for-docker-metrics.png" width=600>
