@@ -1,0 +1,14 @@
+global:
+route:
+  group_by: ['nodejsAppDown']
+  group_wait: 10s
+  receiver: 'slack'
+  group_interval: 15s
+  # repeat_interval: 45s
+
+receivers:
+- name: 'slack'
+  slack_configs:
+  - channel: "#devops"
+    send_resolved: true
+    api_url: 'https://hooks.slack.com/services/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'
